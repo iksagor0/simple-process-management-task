@@ -1,0 +1,306 @@
+{
+	"info": {
+		"_postman_id": "936fe1c8-5c85-44d1-be90-df6094077690",
+		"name": "Assesment - Core Devs Ltd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25861201"
+	},
+	"item": [
+		{
+			"name": "create-process",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1200/create-process",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1200",
+					"path": [
+						"create-process"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example-create-process",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1200/create-process",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"create-process"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "84"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"54-JFK2vh0l56fRV7ZeuLOHxZzHJXc\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 May 2024 07:34:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"process\": {\n        \"pid\": 1,\n        \"createdAt\": \"2024-05-22T07:34:36.084Z\",\n        \"log\": []\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "get-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1200/get-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1200",
+					"path": [
+						"get-all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example-get-all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1200/get-all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"get-all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "197"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c5-oQoOcHbR/+kHf6npKHiIFCM3WOs\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 May 2024 06:11:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"pid\": 1,\n        \"createdAt\": \"2024-05-22T06:11:52.131Z\"\n    },\n    {\n        \"pid\": 2,\n        \"createdAt\": \"2024-05-22T06:11:52.953Z\"\n    },\n    {\n        \"pid\": 3,\n        \"createdAt\": \"2024-05-22T06:11:53.711Z\"\n    },\n    {\n        \"pid\": 4,\n        \"createdAt\": \"2024-05-22T06:11:54.559Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "get-single-process",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1200/get-single/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1200",
+					"path": [
+						"get-single",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "interval-version-get-single-process",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1200/get-single/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"get-single",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "245"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f5-XEz+jqW/cqepIuSC6fxkf54KTD4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 May 2024 06:12:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"process\": {\n        \"pid\": 1,\n        \"createdAt\": \"2024-05-22T06:11:52.131Z\",\n        \"log\": [\n            \"2024-05-22T06:11:57.135Z\",\n            \"2024-05-22T06:12:02.137Z\",\n            \"2024-05-22T06:12:07.144Z\",\n            \"2024-05-22T06:12:12.149Z\",\n            \"2024-05-22T06:12:17.150Z\",\n            \"2024-05-22T06:12:22.163Z\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "delete-process",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1200/delete-process/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1200",
+					"path": [
+						"delete-process",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example-delete-process",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1200/delete-process/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"delete-process",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "61"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3d-OBMa88hISSSk6Ksu5SAmXcBGG7o\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 May 2024 06:06:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Successfully deleted the process\"\n}"
+				}
+			]
+		}
+	]
+}
